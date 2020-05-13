@@ -15,14 +15,14 @@ const Body = (props) => {
             </div>
 
             <div className="Columna">
-                SINONIMOS:
+                ANTONIMOS:
                 {props.ant.map((result) => {
                     return <Antonimo ant={result.antonimo} onSearch={props.onSearch}/>;
                 })}
             </div>   
 
             <div className="Columna">
-                ANTONIMOS:
+                SINONIMOS:
                 {props.sin.map((result) => {
                     return<Sinonimo sinonimo={result.sinonimo} onSearch={props.onSearch}/>;
                 })}
